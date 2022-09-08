@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Чистая линия</title>
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="canonical" href="URL">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="description" content="Index page">
+		<meta name="keywords" content="index, page">
+		<meta name="author" content="">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:image" content="">
+		<meta name="twitter:description" content="">
+		<meta property="og:url" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="assets/images/opengraph.jpg">
+		<meta property="og:type" content="website"><!-- iOS-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Чистая линия">
+		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.svg"><!-- Android-->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#17A3D0"><!-- Windows-->
+		<meta name="msapplication-TileColor" content="#17A3D0">
+		<!--link(type='font/woff', href=require('font'), rel='preload', as='font', crossorigin)-->
+		<link rel="shortcut icon" href="assets/favicon.ico">
+		<link href="vendors.css" rel="stylesheet">
+		<link href="app.css" rel="stylesheet">
+	</head>
+
+	<body class="page-main">
+		<!--[if lt IE 10]><p class="browsehappy">Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем выбрать и установить любой из &nbsp;<a href="http://browsehappy.com/" target="_blank">современных браузеров.</a> Это бесплатно и займет всего несколько минут.</p><![endif]-->
+		<div class="popup" id="grabMe" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="form-request">
+				<h3>Оставить заявку</h3>
+				<form action="" method="POST">
+					<div class="form__group">
+						<div class="control-body input"><input class="control" type="text" name="name" id="name" placeholder="ФИО" required="required" />
+							<div class="control-error"></div>
+						</div>
+					</div>
+					<div class="form__group">
+						<div class="control-body input"><input class="control" type="text" name="birth" id="birth" placeholder="Дата рождения" required="required" />
+							<div class="control-error"></div>
+						</div>
+					</div>
+					<div class="form__group">
+						<div class="control-body input"><input class="control" type="text" name="phone" id="phone" placeholder="Телефон" required="required" />
+							<div class="control-error"></div>
+						</div>
+					</div>
+					<div class="form__group">
+						<div class="control-body input"><input class="control" type="email" name="email" id="email" placeholder="E–mail" required="required" />
+							<div class="control-error"></div>
+						</div>
+					</div>
+					<div class="checkbox form__group col__md-8"><input type="checkbox" id="popup-sign" required><label for="popup-sign">Согласен на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></label>
+						<div class="control-error"></div>
+					</div><button class="btn btn--primary btn--full form--js" type="submit"><span>Отправить</span></button>
+				</form>
+			</div>
+			<div class="form-response">
+				<div class="inner">
+					<h3>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.</h3><button class="btn btn--primary btn--full close-popup--js"><span>Закрыть</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="lesson" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha">Уроки молочного сомелье</h2>
+				<div class="imag"><img src="assets/images/festival/popup1.jpg" alt="" /></div>
+				<div class="row">
+					<div class="col col__md-6 col__xs-12">
+						<h3>Коктейли</h3>
+						<ul class="list--bullet list--bullet--bl">
+							<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+							<li>Сыворотка, кокос и ванильное мороженное</li>
+							<li>Йогурт, свежая мята и хлопья</li>
+							<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+							<li>Сгущенка с йогуртом и клубничным кули</li>
+						</ul>
+					</div>
+					<div class="col col__md-6 col__xs-12">
+						<h3>Десерты</h3>
+						<ul class="list--bullet list--bullet--bl">
+							<li>Бургер с мороженным и ягодами</li>
+							<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+							<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+							<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="diet" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha">Public talk с диетологом, психологом и&nbsp;нутрициологом</h2>
+				<div class="test__lg backBl">Лекция, вопрос/ответ/, разбор ситуации из зала</div>
+				<div class="row popupList">
+					<div class="col col__md-6 col__xs-12">
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-1.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Все о&nbsp;детском питании</h4>
+								<p>Основные принципы сбалансированного детского рациона</p>
+							</div>
+						</div>
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-2.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Главные ошибки в ежедневном рационе</h4>
+								<p>Разрушим основные мифы о&nbsp;питании</p>
+							</div>
+						</div>
+					</div>
+					<div class="col col__md-6 col__xs-12">
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-3.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Как похудеть без вреда для здоровья</h4>
+								<p>Способы похудения без отказа от&nbsp;любимых продуктов</p>
+							</div>
+						</div>
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-4.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Осознанность в&nbsp;пищевом поведении</h4>
+								<p>Как устоять перед соблазнами в&nbsp;еде</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="children" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha mb">Мастерская для детей</h2>
+				<div class="slideshow-container img">
+					<div class="swiper-container main-slider" data-image-pagination="[&quot;assets/images/interests/pagin-1.png&quot;, &quot;assets/images/interests/pagin-2.png&quot;, &quot;assets/images/interests/pagin-3.png&quot;]" data-num="13">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/children.jpg"></div><img src="assets/images/festival/children.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/children.jpg"></div><img src="assets/images/festival/children.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/children.jpg"></div><img src="assets/images/festival/children.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-tools">
+						<div class="swiper-button hidden__sm hidden__xs">
+							<div class="swiper-prev nextBlock--ico"><img src="assets/images/icons/prevArr.svg" alt="" /></div>
+							<div class="swiper-next nextBlock--ico"><img src="assets/images/icons/nextArr.svg" alt="" /></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col__md-6 col__xs-12">
+						<ul class="list--bullet list--bullet--bl">
+							<li>Создаем авторские обертки для мороженого</li>
+							<li>Строим королевство Мороженого</li>
+							<li>Мастерим полезные поделки из палочек для мороженого</li>
+						</ul>
+					</div>
+					<div class="col col__md-6 col__xs-12">
+						<ul class="list--bullet list--bullet--bl">
+							<li>Плетем браслеты, книжные закладки, корзинки, венки из фирменных оберток</li>
+							<li>Делаем из фольги картины, короны и кокошники, шлемы и щиты для сказочных жителей страны Мороженого</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="battls" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha mb">Семейные кулинарные баттлы</h2>
+				<div class="slideshow-container img">
+					<div class="swiper-container main-slider" data-image-pagination="[&quot;assets/images/interests/pagin-1.png&quot;, &quot;assets/images/interests/pagin-2.png&quot;, &quot;assets/images/interests/pagin-3.png&quot;]" data-num="3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/battle.jpg"></div><img src="assets/images/festival/battle.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/battle.jpg"></div><img src="assets/images/festival/battle.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/battle.jpg"></div><img src="assets/images/festival/battle.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-tools">
+						<div class="swiper-button hidden__sm hidden__xs">
+							<div class="swiper-prev nextBlock--ico"><img src="assets/images/icons/prevArr.svg" alt="" /></div>
+							<div class="swiper-next nextBlock--ico"><img src="assets/images/icons/nextArr.svg" alt="" /></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col__md-6 col__xs-12">
+						<h3>Объедините усилия, чтобы одержать победу во вкусном соревновании!</h3>
+					</div>
+					<div class="col col__md-6 col__xs-12">
+						<p>Участникам баттла предстоит продемонстрировать свои навыки в приготовлении десертов или коктейлей.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="theater" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha mb">Театральные постановки</h2>
+				<div class="slideshow-container img">
+					<div class="swiper-container main-slider" data-image-pagination="[&quot;assets/images/interests/pagin-1.png&quot;, &quot;assets/images/interests/pagin-2.png&quot;, &quot;assets/images/interests/pagin-3.png&quot;]" data-num="23">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/theater.jpg"></div><img src="assets/images/festival/theater.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/theater.jpg"></div><img src="assets/images/festival/theater.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<div class="slide-bgimg" style="background-image:url(assets/images/festival/theater.jpg"></div><img src="assets/images/festival/theater.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-tools">
+						<div class="swiper-button hidden__sm hidden__xs">
+							<div class="swiper-prev nextBlock--ico"><img src="assets/images/icons/prevArr.svg" alt="" /></div>
+							<div class="swiper-next nextBlock--ico"><img src="assets/images/icons/nextArr.svg" alt="" /></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col__md-6 col__xs-12">
+						<h3>Посетителей ждёт насыщенная анимационная программа!</h3>
+					</div>
+					<div class="col col__md-6 col__xs-12">
+						<p>Яркие шоу и запоминающиеся постановки подарят море позитивных эмоций и хорошее настроение. За актуальным расписанием программы следите на сайте.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="deg" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha mbs">Дегустация продукции <br> «Чистая Линия»</h2>
+				<p>Бесплатная дегустация вкусных, натуральных молочных продуктов и мороженого «Чистая Линия»</p>
+				<div class="row popupList popupList--med">
+					<div class="col col__md-6 col__xs-12">
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-5.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Мороженое</h4>
+							</div>
+						</div>
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-6.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Хиты продаж</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col col__md-6 col__xs-12">
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-7.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Новинки</h4>
+							</div>
+						</div>
+						<div class="popupList-item">
+							<div class="popupList-item-img"><img src="assets/images/festival/pop-ico-8.svg" alt="" /></div>
+							<div class="popupList-item-desc">
+								<h4>Свежая молочная продукция</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="present" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha mb">Гостей молочной академии ждут фирменные подарки</h2>
+				<div class="popupRoll">
+					<div class="popupRoll-item">
+						<div class="popupRoll-item-desc">
+							<p>Сертификаты на покупки в интернет-магазине «Омолоко» номиналом</p>
+							<div class="roller">1000 и 2000 <span>руб.</span></div>
+							<div class="log"><img src="assets/images/festival/milk.svg" alt="" /></div>
+						</div>
+					</div>
+					<div class="popupRoll-item">
+						<div class="popupRoll-item-desc">
+							<p>Билеты на посещение смотровой площадки</p>
+							<div class="roller roller--y">PANORAMA360</div>
+							<div class="log"><img src="assets/images/festival/bez.svg" alt="" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup--lg" id="progg" style="display: none">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<h2 class="alpha mb">Программа на 1-2 мая</h2>
+				<div class="accordion">
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Уроки молочного сомелье</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Public talk с нутрициологом Екатериной Масловой</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Мастерская для детей</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Семейный кулинарные баттлы</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Театральные постановки</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Дегустация продукции «Чистая Линия»</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion__item accordion__item--js" data-aos="fade-up">
+						<div class="accordion-head">Вручение подарков</div>
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Сыворотка, банан, клубника и ванильное мороженое</li>
+										<li>Сыворотка, кокос и ванильное мороженное</li>
+										<li>Йогурт, свежая мята и хлопья</li>
+										<li>Простокваша, орехи и мед с выдержанным яблоком</li>
+										<li>Сгущенка с йогуртом и клубничным кули</li>
+									</ul>
+								</div>
+								<div class="col col__md-6 col__xs-12">
+									<h5>Коктейли</h5>
+									<ul class="list--bullet--bl">
+										<li>Бургер с мороженным и ягодами</li>
+										<li>Десерт в стаканчике с ряженкой и клюквой в шоколаде</li>
+										<li>Десерт коктейль из шоколадного мороженого с кешью медом и кунжутом</li>
+										<li>Десерт коктейль из ванильного мороженного с кешью и корицей</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- academy-stop (modal)-->
+		<div class="popup" id="academy-stop" style="display: none" data-modal-class="academy-stop">
+			<div class="close-popup close-popup--js"><img src="assets/images/icons/close.svg" alt="" /></div>
+			<div class="popup-inner">
+				<div class="academy-stop__container">
+					<h2 class="academy-stop__title">В&nbsp;соответствии с&nbsp;принятыми Мэром Москвы новыми ограничениями* по&nbsp;предотвращению распространения коронавирусной инфекции Молочная академия временно приостановлена. Следите за&nbsp;новостями!</h2>
+					<p class="academy-stop__caption"><a class="academy-stop__link" href="https://www.mos.ru/authority/documents/doc/46665220/" target="_blank">*В соответствии с указом Мэра Москвы от 22 июня 2021 г. № 35-УМ</a></p>
+					<div class="academy-stop__button"><button class="btn btn--primary close-popup--js"><span>Понятно</span></button></div>
+				</div>
+			</div>
+		</div>
+		<div class="loading"></div>
+		<div class="mobile-head">
+			<div class="mobile__nav mobile-nav--js"><svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path class="circle" d="M16.4448 58.2975C11.8338 51.3341 10.3097 44.0928 11.5764 37.4205C12.8432 30.7473 16.9116 24.5904 23.5833 19.8164C24.3815 19.2453 25.1617 18.6412 25.9184 18.0216C33.0115 12.2144 40.8795 10.8275 48.1243 12.6126C55.3831 14.4013 62.0496 19.3843 66.6779 26.3739C71.4427 33.5696 73.6052 40.8026 72.8218 47.3871C72.0402 53.9559 68.3179 59.9565 61.1549 64.6932C46.7887 74.1931 25.8689 72.5297 16.4448 58.2975Z" fill="white" stroke="#F1EFD6"></path>
+					<path class="text" d="M33.5176 46.9714H31.7949V40.1082L29.2109 44.032H28.4043L25.834 40.0945V46.9714H24.1113V37.1687H25.6836L28.8145 41.9812L31.9316 37.1687H33.5176V46.9714ZM36.4844 43.9363C36.5208 44.4923 36.7168 44.9252 37.0723 45.2351C37.4277 45.545 37.929 45.7 38.5762 45.7C39.0046 45.7 39.4238 45.6453 39.834 45.5359C40.2533 45.4174 40.6771 45.2306 41.1055 44.9753L41.3105 46.4246C40.9277 46.6615 40.4948 46.8393 40.0117 46.9578C39.5286 47.0763 39.041 47.1355 38.5488 47.1355C37.8379 47.1355 37.2363 47.0352 36.7441 46.8347C36.252 46.6251 35.8509 46.3471 35.541 46.0007C35.2311 45.6453 35.0078 45.2351 34.8711 44.7703C34.7344 44.2963 34.666 43.795 34.666 43.2664C34.666 42.7468 34.748 42.2546 34.9121 41.7898C35.0762 41.3158 35.3086 40.9057 35.6094 40.5593C35.9193 40.213 36.2975 39.9395 36.7441 39.739C37.1908 39.5294 37.7012 39.4246 38.2754 39.4246C38.8314 39.4246 39.3236 39.5248 39.752 39.7253C40.1895 39.9259 40.5586 40.1993 40.8594 40.5457C41.1602 40.892 41.388 41.3067 41.543 41.7898C41.6979 42.2638 41.7754 42.7742 41.7754 43.321C41.7754 43.4213 41.7754 43.5216 41.7754 43.6218C41.7754 43.713 41.7663 43.8178 41.748 43.9363H36.4844ZM39.998 42.5964C39.9707 42.0769 39.8021 41.6622 39.4922 41.3523C39.1823 41.0333 38.7676 40.8738 38.248 40.8738C37.7012 40.8738 37.2682 41.0378 36.9492 41.366C36.6302 41.6941 36.4616 42.1042 36.4434 42.5964H39.998ZM42.7051 39.5886H44.4277V42.2546H47.5039V39.5886H49.2266V46.9714H47.5039V43.6628H44.4277V46.9714H42.7051V39.5886ZM56.4453 45.7C56.9648 45.7 57.3522 45.4721 57.6074 45.0164C57.8535 44.5424 57.9766 43.9636 57.9766 43.28C57.9766 43.0248 57.9492 42.7559 57.8945 42.4734C57.849 42.1817 57.7624 41.9174 57.6348 41.6804C57.5163 41.4434 57.3568 41.2475 57.1562 41.0925C56.9648 40.9376 56.7188 40.8601 56.418 40.8601C56.1081 40.8601 55.8529 40.9376 55.6523 41.0925C55.4609 41.2475 55.3105 41.4434 55.2012 41.6804C55.0918 41.9174 55.0143 42.1772 54.9688 42.4597C54.9323 42.7423 54.9141 43.0157 54.9141 43.28C54.9141 43.9636 55.0371 44.5424 55.2832 45.0164C55.5111 45.4721 55.8984 45.7 56.4453 45.7ZM56.418 47.1355C55.9167 47.1355 55.4746 47.058 55.0918 46.9031C54.7181 46.739 54.3991 46.5111 54.1348 46.2195C53.8704 45.9369 53.6608 45.5997 53.5059 45.2078C53.36 44.8158 53.2689 44.3875 53.2324 43.9226H52.3848V46.9714H50.6621V39.5886H52.3848V42.5281H53.2461C53.3008 42.0815 53.4056 41.6713 53.5605 41.2976C53.7246 40.9148 53.9388 40.5867 54.2031 40.3132C54.4766 40.0307 54.7956 39.8119 55.1602 39.657C55.5339 39.502 55.9622 39.4246 56.4453 39.4246C57.0104 39.4246 57.4935 39.5294 57.8945 39.739C58.3047 39.9486 58.6419 40.2312 58.9062 40.5867C59.1706 40.9421 59.3665 41.3523 59.4941 41.8171C59.6217 42.282 59.6855 42.7696 59.6855 43.28C59.6855 43.7996 59.6172 44.2963 59.4805 44.7703C59.3529 45.2442 59.1569 45.6544 58.8926 46.0007C58.6191 46.3562 58.2773 46.6342 57.8672 46.8347C57.457 47.0352 56.974 47.1355 56.418 47.1355Z" fill="#17A3D0"></path>
+					<path class="close" fill-rule="evenodd" clip-rule="evenodd" d="M47.6275 35.3138C48.018 35.7043 48.018 36.3375 47.6275 36.728L37.728 46.6275C37.3374 47.018 36.7043 47.018 36.3137 46.6275C35.9232 46.237 35.9232 45.6038 36.3137 45.2133L46.2132 35.3138C46.6038 34.9233 47.2369 34.9233 47.6275 35.3138Z" fill="white"></path>
+					<path class="close" fill-rule="evenodd" clip-rule="evenodd" d="M36.3137 35.3138C36.7042 34.9233 37.3374 34.9233 37.7279 35.3138L47.6274 45.2133C48.0179 45.6038 48.0179 46.237 47.6274 46.6275C47.2369 47.018 46.6037 47.018 46.2132 46.6275L36.3137 36.728C35.9232 36.3375 35.9232 35.7043 36.3137 35.3138Z" fill="white"></path>
+				</svg></div>
+		</div>
+		<div class="mobile__logo"><a href="/"><img src="assets/images/logom.svg" alt="Чистая линия"></a></div>
+		<header class="page-header" data-aos="fade-right"><svg class="bubble" width="18" height="251" viewBox="0 0 18 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.0491123 98.2068L0.762514 0C0.762514 0 1.41758 54.0288 4.59133 79.1288C6.34367 92.9874 10.5078 103.776 13.1972 109.612C16.0996 114.208 17.7793 119.654 17.7793 125.491C17.7793 131.309 16.1111 136.737 13.2271 141.323C10.5387 147.144 6.35016 157.961 4.59133 171.871C1.41758 196.971 0.762514 251 0.762514 251L-0.0492554 152.776C-3.70738 154.381 -7.74988 155.271 -12.0004 155.271C-28.4472 155.271 -41.78 141.938 -41.78 125.491C-41.78 109.044 -28.4472 95.7117 -12.0004 95.7117C-7.74982 95.7117 -3.70728 96.6022 -0.0491123 98.2068Z" fill="#F1EFD6"></path>
+			</svg>
+			<div class="page-header__logo"><a href="/"><img src="assets/images/logo.svg" alt="Чистая линия"></a></div>
+			<nav class="navbar">
+				<ul class="main-menu">
+					<li class="main-menu__item main-menu__item--active"><a class="main-menu__link" href="#">Молочная продукция</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">Мороженое</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">Шоколад</a></li>
+				</ul>
+				<ul class="main-nav">
+					<li class="main-nav__item  main-nav__item--active"><a class="main-nav__link" href="/" title="Мир Чистой Линии">Мир Чистой Линии</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Производство">Производство</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Покупателю">Покупателю</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Рецепты">Рецепты</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Интересное">Интересное</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Спецпроекты">Спецпроекты</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Пресс–центр">Пресс–центр</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Реферальная программа">Реферальная программа</a></li>
+					<li class="main-nav__item"><a class="main-nav__link" href="#" title="Контакты">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="page-header__links"><a class="page-header__link" href="https://bitvaplombirov.ru/"><img src="assets/images/festival/ava.png" alt="" /><span>Битва пломбиров</span></a><a class="page-header__link" href="/academy/"><img src="assets/images/festival/ava-1.png" alt="" /><span>Молочная академия</span></a></div>
+		</header>
+		<div class="main">
+			<main class="page-catalog">
+				<div class="left-container">
+					<div class="mainTitle">
+						<div class="breadcrumbs-wrapper">
+							<ul class="breadcrumbs" data-aos="fade-left">
+								<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Мороженое</a></li>
+								<li class="breadcrumbs__item active"><a class="breadcrumbs__link" href="/"><svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5958 0.578664C11.9567 0.295897 12.4637 0.294803 12.8259 0.576012L22.6131 8.17601C23.0493 8.51474 23.1283 9.14295 22.7896 9.57917C22.4509 10.0154 21.8227 10.0944 21.3865 9.75568L12.2153 2.63406L7.6165 6.23701C7.18176 6.57762 6.55321 6.5013 6.2126 6.06655C5.87199 5.6318 5.94831 5.00326 6.38306 4.66265L11.5958 0.578664Z" fill="#5DCBEE"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M20.9998 10.9659C20.4475 10.9659 19.9998 11.4137 19.9998 11.9659V19.6342H4.99978V16.2219C4.99978 15.6696 4.55206 15.2219 3.99978 15.2219C3.4475 15.2219 2.99978 15.6696 2.99978 16.2219V20.6342C2.99978 21.1865 3.4475 21.6342 3.99978 21.6342H20.9998C21.5521 21.6342 21.9998 21.1865 21.9998 20.6342V11.9659C21.9998 11.4137 21.5521 10.9659 20.9998 10.9659Z" fill="#5DCBEE"></path>
+											<path d="M5.0071 7.70724C5.37848 7.373 5.37848 6.79067 5.00711 6.45643C4.68712 6.16843 4.20135 6.16842 3.88136 6.45642L0.825665 9.20653C0.384283 9.60378 0.384283 10.2959 0.825665 10.6931L3.88136 13.4432C4.20135 13.7312 4.68712 13.7312 5.00711 13.4432C5.37848 13.109 5.37848 12.5267 5.00711 12.1924L3.40424 10.7498H11.1998C11.6416 10.7498 11.9998 10.3916 11.9998 9.94983C11.9998 9.50801 11.6416 9.14984 11.1998 9.14984H3.40424L5.0071 7.70724Z" fill="#5DCBEE"></path>
+										</svg></a></li>
+							</ul>
+						</div>
+						<h1 class="mainTitle-text" data-aos="fade-up">Мороженое</h1>
+					</div>
+					<div class="catalogMain">
+						<div class="catalogFilter--btn btn-icon catalogFilter--js"><span>Фильтры</span><img src="assets/images/icons/plus-sq.svg" alt="" /></div>
+						<div class="catalogFilter">
+							<div class="catalogFilter__item"><select class="select select-template" data-title="Виды">
+									<option value data-img="assets/images/catalog/filter/filter-1.svg">Все</option>
+									<option value="filter-2" data-img="assets/images/catalog/filter/filter-2.svg">Стаканчики</option>
+									<option value="filter-3" data-img="assets/images/catalog/filter/filter-3.svg">Рожки</option>
+									<option value="filter-4" data-img="assets/images/catalog/filter/filter-4.svg">Эскимо</option>
+									<option value="filter-5" data-img="assets/images/catalog/filter/filter-5.svg">Лакомка</option>
+									<option value="filter-6" data-img="assets/images/catalog/filter/filter-6.svg">Брикеты</option>
+									<option value="filter-7" data-img="assets/images/catalog/filter/filter-7.svg">Щербет</option>
+									<option value="filter-8" data-img="assets/images/catalog/filter/filter-8.svg">Семейное</option>
+									<option value="filter-9" data-img="assets/images/catalog/filter/filter-9.svg">Ванночки</option>
+									<option value="filter-10" data-img="assets/images/catalog/filter/filter-10.svg">Лотки</option>
+								</select></div>
+							<div class="catalogFilter__item"><select class="select select-template" data-title="Вкусы">
+									<option value data-img="assets/images/catalog/filter/filter-1.svg">Все</option>
+									<option value="filter-2" data-img="assets/images/catalog/filter/filter-2.svg">Тирамису</option>
+									<option value="filter-11" data-img="assets/images/catalog/filter/filter-11.svg">Ваниль</option>
+									<option value="filter-12" data-img="assets/images/catalog/filter/filter-12.svg">Смородина</option>
+									<option value="filter-13" data-img="assets/images/catalog/filter/filter-13.svg">Тропик</option>
+									<option value="filter-14" data-img="assets/images/catalog/filter/filter-14.svg">Йогурт</option>
+									<option value="filter-15" data-img="assets/images/catalog/filter/filter-15.svg">Карамель</option>
+								</select></div>
+							<div class="catalogFilter__item">
+								<div class="btn btn--info btn__lg btn-icon btn--full reset-filter--js"><img src="assets/images/icons/rotate-cw.svg" alt="" /><span>Сбросить</span></div>
+							</div>
+						</div>
+						<div class="row moreDetail--js catalog catalog--main" data-num="12" data-more="4">
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog__label"><img class="catalog__label-img" src="assets/images/taste-search.svg"></div>
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-1.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+										<div class="tags-item">100% натурально</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир ванильный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-1.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+										<div class="tags-item">100% натурально</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир ванильный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-2.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир шоколадный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-3.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир крем–брюле в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-4.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир с кусочками клубники в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-2.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир шоколадный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-3.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир крем–брюле в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-4.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир с кусочками клубники в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-1.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+										<div class="tags-item">100% натурально</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир ванильный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-1.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+										<div class="tags-item">100% натурально</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир ванильный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-2.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир ванильный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-3.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир крем–брюле в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-4.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир с кусочками клубники в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-2.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир шоколадный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-3.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир крем–брюле в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-4.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир с кусочками клубники в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+							<div class="col col__xl-3 col__lg-4 col__xs-6 more__item--js" data-aos="fade-up"><a class="catalog__item" href="#">
+									<div class="catalog-img">
+										<div class="catalog-img-wrapper"><img src="assets/images/catalog/item-1.png" alt="" /></div>
+										<div class="sea">
+											<div class="surface"></div>
+										</div>
+									</div>
+									<div class="tags">
+										<div class="tags-item">Хит</div>
+										<div class="tags-item">Новинка</div>
+										<div class="tags-item">Без ГМО</div>
+										<div class="tags-item">100% натурально</div>
+									</div>
+									<div class="catalog-desc">
+										<p>Пломбир ванильный в вафельном стаканчике, 80г</p>
+									</div>
+								</a></div>
+						</div>
+						<div class="row">
+							<div class="col col__lg-6 col__xs-12 centered-block" data-aos="fade-up"><a class="btn btn--default btn--full btn-icon" href="#"><span>Показать еще</span><i class="sprite sprite--arr-d"></i></a></div>
+						</div>
+					</div>
+					<div class="whereBuy" data-aos="fade-up">
+						<h2>Где купить?</h2>
+						<p class="text__lg">Продукцию «Чистая Линия» можно найти <span class="br-style"></span> в популярных сетях и розничных магазинах, <span class="br-style"></span> а также купить в нашем интернет-магазине.</p>
+						<div class="btn-group" data-aos="fade-up"><a class="btn btn--primary" href="#"><img src="assets/images/icons/location.svg" alt="" /><span class="page-catalog__button-text">Купить в Москве и МО</span></a><a class="btn btn--primary" href="#"><img src="assets/images/icons/location.svg" alt="" /><span class="page-catalog__button-text">Купить в Санкт–Петурбурге и ЛО</span></a></div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="page-footer page-footer--alt">
+			<div class="page-footer-inner" data-aos="fade-up">
+				<div class="row">
+					<div class="col col__xl-6 col__lg-5 col__xs-12 first__lg last__xs">
+						<div class="row row--mob footer-app-container">
+							<div class="col col__lg-12 col__md-6 col__xs-12">
+								<div class="h--3 visible__lg visible__xl">Только <span>&nbsp;натуральное&nbsp;</span> <br> <span>&nbsp;мороженое&nbsp;</span> может быть <br> <span>&nbsp;вкусным&nbsp;</span></div>
+							</div>
+							<div class="col col__xs-12">
+								<div class="social"><a class="social__link" href="#"><svg width="41" height="41" viewbox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.2">
+												<path class="circle" d="M20.0436 0.73628L20.0812 0.73628L20.1184 0.730665C26.414 -0.220926 31.469 1.84428 34.9616 5.5868C38.4664 9.34246 40.4229 14.8174 40.4229 20.6998C40.4229 26.612 38.9699 31.5421 36.1456 34.9845C33.3329 38.4128 29.1137 40.4231 23.4455 40.4231C12.0658 40.4231 1.15315 31.5981 1.15315 19.9578C1.15315 14.0814 3.06403 9.28457 6.35579 5.95856C9.64728 2.63282 14.3603 0.73628 20.0436 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M20.7354 25.9848H21.8017C21.8017 25.9848 22.141 25.9357 22.2864 25.7883C22.4318 25.6408 22.4318 25.2968 22.4318 25.2968C22.4318 25.2968 22.4318 23.8717 23.0619 23.6752C23.692 23.4786 24.5644 25.0511 25.4369 25.69C26.1154 26.1322 26.6001 26.034 26.6001 26.034L28.9751 25.9848C28.9751 25.9848 30.1868 25.8865 29.6052 24.9037C29.5567 24.8054 29.2659 24.1666 27.8603 22.8398C26.4062 21.4638 26.6001 21.6604 28.345 19.2524C29.4113 17.7782 29.8475 16.8936 29.7021 16.5005C29.5567 16.1565 28.7812 16.2548 28.7812 16.2548H26.1154C26.1154 16.2548 25.9215 16.2056 25.7761 16.3039C25.6307 16.4022 25.5338 16.5988 25.5338 16.5988C25.5338 16.5988 25.0976 17.729 24.5644 18.7119C23.4012 20.7267 22.9165 20.8741 22.7226 20.7267C22.2864 20.481 22.3833 19.5964 22.3833 18.9576C22.3833 16.9919 22.6741 16.1565 21.8017 15.9599C21.5109 15.9108 21.317 15.8616 20.5415 15.8125C19.5721 15.8125 18.7966 15.8125 18.3604 16.0582C18.0696 16.2056 17.8273 16.5496 17.9727 16.5496C18.1665 16.5496 18.5543 16.6479 18.7482 16.9428C19.039 17.3359 18.9905 18.1713 18.9905 18.1713C18.9905 18.1713 19.1359 20.481 18.6028 20.7758C18.2635 20.9724 17.7788 20.5792 16.7125 18.7119C16.1793 17.7782 15.7431 16.7462 15.7431 16.7462C15.7431 16.7462 15.7431 16.5496 15.5977 16.4513C15.4038 16.3039 15.21 16.3039 15.21 16.3039H12.6896C12.6896 16.3039 12.3018 16.3039 12.1564 16.5005C12.011 16.6479 12.1564 16.9428 12.1564 16.9428C12.1564 16.9428 14.1436 21.6112 16.3732 23.97C18.4089 26.1322 20.7354 25.9848 20.7354 25.9848Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="#"><svg width="42" height="41" viewbox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.2">
+												<path class="circle" d="M21.0129 0.73628L21.0505 0.73628L21.0876 0.730665C27.3832 -0.220926 32.4383 1.84428 35.9308 5.5868C39.4357 9.34246 41.3921 14.8174 41.3921 20.6998C41.3921 26.612 39.9392 31.5421 37.1148 34.9845C34.3021 38.4128 30.0829 40.4231 24.4147 40.4231C13.035 40.4231 2.12239 31.5981 2.12239 19.9578C2.12239 14.0814 4.03327 9.28457 7.32503 5.95856C10.6165 2.63282 15.3296 0.73628 21.0129 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M24.1999 15.5789V17.16H27.0049L26.6487 19.9979H24.1999V27.9035H20.3707V19.9979H18.6343V17.16H20.3707V15.5789C20.3707 15.5789 20.0591 12.5788 23.1758 12.0923H27.0049V14.6464H25.2684C25.2684 14.6059 24.2889 14.5653 24.1999 15.5789Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="#"><svg width="42" height="41" viewbox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.2">
+												<path class="circle" d="M20.9826 0.73628L21.0202 0.73628L21.0573 0.730665C27.353 -0.220926 32.408 1.84428 35.9006 5.5868C39.4054 9.34246 41.3618 14.8174 41.3618 20.6998C41.3618 26.612 39.9089 31.5421 37.0846 34.9845C34.2719 38.4128 30.0526 40.4231 24.3844 40.4231C13.0047 40.4231 2.09212 31.5981 2.09212 19.9578C2.09212 14.0814 4.00299 9.28457 7.29475 5.95856C10.5862 2.63282 15.2993 0.73628 20.9826 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M22.8143 17.6353C21.5206 17.6353 20.4717 18.6842 20.4717 19.9779C20.4717 21.2716 21.5206 22.3206 22.8143 22.3206C24.1079 22.3206 25.1568 21.2716 25.1568 19.9779C25.1568 18.6842 24.1079 17.6353 22.8143 17.6353Z" fill="#5CA8C0"></path>
+											<path d="M25.2616 13.02H20.3666C17.8842 13.02 15.8213 15.083 15.8213 17.5655V22.4256C15.8213 24.9431 17.8842 26.9711 20.3666 26.9711H25.2266C27.744 26.9711 29.7719 24.9081 29.7719 22.4256V17.5655C29.8069 15.083 27.744 13.02 25.2616 13.02ZM22.8141 23.6494C20.8211 23.6494 19.1778 22.041 19.1778 20.013C19.1778 17.9851 20.8211 16.3767 22.8141 16.3767C24.807 16.3767 26.4503 17.9851 26.4503 20.013C26.4503 22.006 24.842 23.6494 22.8141 23.6494ZM26.3804 17.2508C25.8909 17.2508 25.5063 16.8312 25.5063 16.3767C25.5063 15.9221 25.9259 15.4676 26.3804 15.4676C26.8699 15.4676 27.2545 15.8872 27.2545 16.3417C27.2545 16.8662 26.8699 17.2508 26.3804 17.2508Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="#"><svg width="42" height="41" viewbox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.2">
+												<path class="circle" d="M20.9509 0.73628L20.9884 0.73628L21.0256 0.730665C27.3212 -0.220926 32.3763 1.84428 35.8688 5.5868C39.3736 9.34246 41.3301 14.8174 41.3301 20.6998C41.3301 26.612 39.8772 31.5421 37.0528 34.9845C34.2401 38.4128 30.0209 40.4231 24.3527 40.4231C12.973 40.4231 2.06038 31.5981 2.06038 19.9578C2.06038 14.0814 3.97126 9.28457 7.26301 5.95856C10.5545 2.63282 15.2675 0.73628 20.9509 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M24.915 17.8242C25.8831 18.5174 27.0688 18.9254 28.3493 18.9254V16.9816C27.6345 16.8291 27.0017 16.4548 26.5259 15.9341C25.7116 15.4249 25.1248 14.5848 24.9528 13.6016H23.1575V23.4644C23.1535 24.6142 22.2222 25.5452 21.0738 25.5452C20.3971 25.5452 19.7959 25.222 19.4152 24.7213C18.7353 24.3775 18.269 23.6716 18.269 22.8563C18.269 21.7032 19.2018 20.7684 20.3526 20.7684C20.5731 20.7684 20.7856 20.8028 20.985 20.8662V18.9013C18.5135 18.9524 16.5259 20.9759 16.5259 23.4645C16.5259 24.7068 17.0209 25.833 17.8242 26.6558C18.5489 27.1435 19.4214 27.4278 20.36 27.4278C22.8756 27.4278 24.915 25.3843 24.915 22.8635V17.8242Z" fill="#5CA8C0"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M28.3496 16.9945V16.4698C27.7039 16.4708 27.0709 16.2902 26.5231 15.9487C27.008 16.4789 27.6466 16.8445 28.3496 16.9945ZM24.9472 13.6202C24.9307 13.5263 24.9181 13.4319 24.9093 13.3371V13.02H22.4263V22.8665C22.4223 24.0142 21.4895 24.9436 20.339 24.9436C20.0012 24.9436 19.6824 24.8636 19.3999 24.7213C19.7813 25.2211 20.3836 25.5438 21.0615 25.5438C22.2118 25.5438 23.1447 24.6144 23.1488 23.4665V13.6202H24.9472ZM20.9725 18.911V18.3524C20.765 18.324 20.5559 18.3098 20.3464 18.31C17.8262 18.31 15.7832 20.3501 15.7832 22.8665C15.7832 24.4442 16.5861 25.8345 17.8062 26.6524C17.0015 25.831 16.5057 24.7067 16.5057 23.4665C16.5057 20.9821 18.4967 18.962 20.9725 18.911Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="#"><svg width="42" height="41" viewbox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.2">
+												<path class="circle" d="M20.9206 0.73628L20.9582 0.73628L20.9953 0.730665C27.291 -0.220926 32.346 1.84428 35.8385 5.5868C39.3434 9.34246 41.2998 14.8174 41.2998 20.6998C41.2998 26.612 39.8469 31.5421 37.0225 34.9845C34.2098 38.4128 29.9906 40.4231 24.3224 40.4231C12.9427 40.4231 2.03011 31.5981 2.03011 19.9578C2.03011 14.0814 3.94098 9.28457 7.23274 5.95856C10.5242 2.63282 15.2373 0.73628 20.9206 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M22.1985 13.9521C19.5149 13.9524 17.6554 13.9613 16.7009 14.8934C15.7689 15.8477 15.7599 17.7945 15.7599 20.3907C18.6428 20.3037 19.9611 20.2315 21.0126 19.2048C22.0392 18.1534 22.1115 16.8351 22.1985 13.9521ZM16.7007 26.0318C15.7687 25.0776 15.7598 23.1308 15.7598 20.5345C18.6426 20.6215 19.961 20.6937 21.0124 21.7204C22.0391 22.7719 22.1113 24.0901 22.1983 26.9729C19.5147 26.9729 17.6552 26.9642 16.7007 26.0318ZM22.3422 26.9729C22.4292 24.0901 22.5014 22.7719 23.5281 21.7204C24.5795 20.6937 25.8979 20.6215 28.7807 20.5345C28.7805 23.1308 28.7715 25.0776 27.8395 26.0318C26.885 26.9642 25.0258 26.9729 22.3422 26.9729ZM22.3422 13.9521C22.4292 16.8351 22.5014 18.1534 23.5281 19.2048C24.5795 20.2315 25.8979 20.3037 28.7807 20.3907C28.7805 17.7945 28.7715 15.8477 27.8395 14.8934C26.885 13.9613 25.0258 13.9524 22.3422 13.9521Z" fill="#5CA8C0"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5281 21.7204C22.5014 22.7719 22.4292 24.0901 22.3422 26.9729C25.0258 26.9729 26.885 26.9642 27.8395 26.0318C28.7715 25.0776 28.7805 23.1308 28.7807 20.5345C25.8979 20.6215 24.5795 20.6937 23.5281 21.7204ZM15.7598 20.5345C15.7598 23.1308 15.7687 25.0776 16.7007 26.0318C17.6552 26.9642 19.5147 26.9729 22.1983 26.9729C22.1113 24.0901 22.0391 22.7719 21.0124 21.7204C19.961 20.6937 18.6426 20.6215 15.7598 20.5345ZM22.1985 13.9521C19.5149 13.9524 17.6554 13.9613 16.7009 14.8934C15.7689 15.8477 15.7599 17.7945 15.7599 20.3907C18.6428 20.3037 19.9611 20.2315 21.0126 19.2048C22.0392 18.1534 22.1115 16.8351 22.1985 13.9521ZM23.5281 19.2048C22.5014 18.1534 22.4292 16.8351 22.3422 13.9521C25.0258 13.9524 26.885 13.9613 27.8395 14.8934C28.7715 15.8477 28.7805 17.7945 28.7807 20.3907C25.8979 20.3037 24.5795 20.2315 23.5281 19.2048Z" fill="url(#paint0_linear)"></path>
+											<path class="circle-up" fill-rule="evenodd" clip-rule="evenodd" d="M28.7807 20.5353V20.4634V20.3917C25.8979 20.3044 24.5795 20.2325 23.5281 19.2055C22.5014 18.1543 22.4292 16.8361 22.3422 13.9531H22.2702H22.1983C22.1113 16.8361 22.0391 18.1543 21.0124 19.2055C19.9609 20.2325 18.6426 20.3044 15.7598 20.3917V20.4634V20.5353C18.6426 20.6225 19.9609 20.6945 21.0124 21.7212C22.0391 22.7726 22.1113 24.0909 22.1983 26.9738H22.2702H22.3422C22.4292 24.0909 22.5014 22.7726 23.5281 21.7212C24.5795 20.6945 25.8979 20.6225 28.7807 20.5353Z" fill="white"></path>
+											<defs>
+												<lineargradient id="paint0_linear" x1="28.7807" y1="26.9729" x2="28.7807" y2="13.9521" gradientunits="userSpaceOnUse">
+													<stop stop-color="white" stop-opacity="0.01"></stop>
+													<stop offset="0.47509" stop-color="white" stop-opacity="0.01"></stop>
+													<stop offset="0.76042" stop-color="white" stop-opacity="0.04271"></stop>
+													<stop offset="0.99531" stop-color="white" stop-opacity="0.09855"></stop>
+													<stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
+												</lineargradient>
+											</defs>
+										</svg></a><a class="social__link" href="https://ok.ru/chistayaliniya"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+											<g opacity="0.2">
+												<path class="circle" d="M20.0427 0.736036L20.0802 0.736036L20.1174 0.730421C26.413 -0.22117 31.4681 1.84404 34.9606 5.58655C38.4654 9.34221 40.4219 14.8172 40.4219 20.6996C40.4219 26.6118 38.969 31.5418 36.1446 34.9843C33.3319 38.4126 29.1127 40.4229 23.4445 40.4229C12.0648 40.4228 1.15218 31.5979 1.15218 19.9576C1.15218 14.0812 3.06305 9.28432 6.35481 5.95831C9.6463 2.63258 14.3593 0.736036 20.0427 0.736036Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M23.1585 22.9996C23.1585 22.9996 22.6785 23.0396 22.8385 23.3196C22.9585 23.5996 24.9185 25.3196 25.0385 25.7996C25.1585 26.2796 25.3585 26.4396 24.7185 27.0796C24.0785 27.6796 23.5985 27.5596 22.5185 26.4796C21.4785 25.3596 20.9585 24.9196 20.9585 24.9196C20.9585 24.9196 20.4385 25.3996 19.3985 26.4796C18.3585 27.5996 17.8385 27.7196 17.1985 27.0796C16.5585 26.4796 16.7585 26.3596 16.8785 25.7996C16.9985 25.3196 18.9585 23.5596 19.0785 23.3196C19.1985 23.0396 18.7585 22.9996 18.7585 22.9996C15.7985 22.6396 16.5985 20.7996 16.5985 20.7996C17.3185 19.6796 18.5185 20.4796 18.5185 20.4796C19.7185 21.3196 21.0385 21.0796 21.0385 21.0796C21.0385 21.0796 22.3585 21.2796 23.5585 20.4796C23.5585 20.4796 24.6785 19.6396 25.4785 20.7996C25.3985 20.7996 26.1985 22.6396 23.1585 22.9996ZM20.9585 19.9596C18.9185 19.9596 17.2785 18.2796 17.2785 16.2796C17.2785 14.2796 18.9585 12.5996 20.9585 12.5996C22.9585 12.5996 24.6385 14.2796 24.6385 16.2796C24.6385 18.2796 22.9985 19.9596 20.9585 19.9596ZM20.9585 14.7196C20.0785 14.7196 19.4385 15.3996 19.4385 16.2396C19.4385 17.0796 20.1185 17.7596 20.9585 17.7596C21.7985 17.7596 22.4785 17.0796 22.4785 16.2396C22.4785 15.3996 21.8385 14.7196 20.9585 14.7196Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="https://www.youtube.com/channel/UCI2t0s9So94s5XogqmJqvPw"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+											<g opacity="0.2">
+												<path class="circle" d="M20.0427 0.736036L20.0802 0.736036L20.1174 0.730421C26.413 -0.22117 31.4681 1.84404 34.9606 5.58655C38.4654 9.34221 40.4219 14.8172 40.4219 20.6996C40.4219 26.6118 38.969 31.5418 36.1446 34.9843C33.3319 38.4126 29.1127 40.4229 23.4445 40.4229C12.0648 40.4228 1.15218 31.5979 1.15218 19.9576C1.15218 14.0812 3.06305 9.28432 6.35481 5.95831C9.6463 2.63258 14.3593 0.736036 20.0427 0.736036Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M28.4258 15.455C27.0083 14.375 23.8583 14.3223 21.0008 14.3223C18.1433 14.3223 14.9933 14.375 13.5758 15.455C12.1583 16.535 12.1133 18.875 12.1133 20.27C12.1133 21.665 12.1583 24.005 13.5758 25.085C14.9933 26.165 18.1433 26.2179 21.0008 26.2179V26.2177C23.8583 26.2177 27.0083 26.165 28.4258 25.085C29.8433 24.005 29.8883 21.665 29.8883 20.27C29.8883 18.875 29.8433 16.535 28.4258 15.455ZM23.8171 20.5846L23.8176 20.5854L18.9889 23.1586C18.963 23.1774 18.9347 23.1923 18.9043 23.2038L18.8984 23.2071L18.898 23.2058C18.859 23.2198 18.8174 23.2288 18.7735 23.2288C18.5684 23.2288 18.4023 23.0625 18.4023 22.8577V17.6712C18.4023 17.4661 18.5686 17.3 18.7735 17.3C18.8312 17.3 18.8854 17.3144 18.9342 17.338L18.9344 17.3378L23.8176 19.9554L23.8174 19.9557C23.9227 20.0212 23.9935 20.1372 23.9935 20.2702C23.9933 20.4032 23.9224 20.5191 23.8171 20.5846Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewbox="0 0 41 41" fill="none">
+											<g opacity="0.2">
+												<path class="circle" d="M20.0439 0.73628L20.0815 0.73628L20.1186 0.730665C26.4143 -0.220926 31.4693 1.84428 34.9618 5.5868C38.4667 9.34246 40.4231 14.8174 40.4231 20.6998C40.4231 26.612 38.9702 31.5421 36.1458 34.9845C33.3331 38.4128 29.1139 40.4231 23.4457 40.4231C12.066 40.4231 1.1534 31.5981 1.1534 19.9578C1.1534 14.0814 3.06427 9.28457 6.35603 5.95856C9.64753 2.63282 14.3606 0.73628 20.0439 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M14.0107 19.3677C18.6265 17.3372 24.5994 14.8615 25.4242 14.5188C27.5868 13.622 28.2505 13.7937 27.9196 15.7801C27.6819 17.2077 26.9965 21.9339 26.4497 24.8757C26.1255 26.6204 25.3978 26.8271 24.254 26.0723C23.704 25.7091 20.9272 23.8727 20.3243 23.4414C19.7742 23.0485 19.0155 22.5757 19.9671 21.6446C20.3058 21.3131 22.5252 19.1934 24.2547 17.5439C24.4812 17.3273 24.1966 16.9713 23.9351 17.145C21.6041 18.6909 18.3723 20.8364 17.9609 21.1157C17.3395 21.5377 16.7426 21.7311 15.6715 21.4234C14.8619 21.191 14.0714 20.9136 13.7637 20.808C12.5784 20.4012 12.8597 19.8742 14.0107 19.3677Z" fill="#5CA8C0"></path>
+										</svg></a><a class="social__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewbox="0 0 41 41" fill="none">
+											<g opacity="0.2">
+												<path class="circle" d="M20.0439 0.73628L20.0815 0.73628L20.1186 0.730665C26.4143 -0.220926 31.4693 1.84428 34.9618 5.5868C38.4667 9.34246 40.4231 14.8174 40.4231 20.6998C40.4231 26.612 38.9702 31.5421 36.1458 34.9845C33.3331 38.4128 29.1139 40.4231 23.4457 40.4231C12.066 40.4231 1.1534 31.5981 1.1534 19.9578C1.1534 14.0814 3.06427 9.28457 6.35603 5.95856C9.64753 2.63282 14.3606 0.73628 20.0439 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path d="M11.381 21.8774C10.0293 14.9517 12.1969 11.7327 19.1226 10.381C26.0483 9.0293 29.2673 11.1969 30.619 18.1226C31.9707 25.0483 29.8031 28.2673 22.8774 29.619C15.9517 30.9707 12.7327 28.8031 11.381 21.8774Z" fill="#5CA8C0"></path>
+											<path class="social__invert-fill" d="M18.6564 17.9723C19.2109 19.692 18.4279 21.4851 16.9072 21.9776C15.3866 22.4699 13.7045 21.4748 13.1497 19.7554C13.1319 19.6997 13.1154 19.6441 13.1003 19.5886L12.1885 19.8634C12.2059 19.9252 12.2238 19.987 12.2436 20.0486C12.9809 22.3342 15.2168 23.6565 17.2378 23.0023C19.2588 22.3478 20.2995 19.9646 19.5625 17.6789C19.5586 17.6671 19.5542 17.6556 19.5502 17.6438L18.6377 17.9189C18.6438 17.9368 18.6505 17.9544 18.6564 17.9723Z" fill="white"></path>
+											<path d="M16.9078 21.9778C18.4285 21.4856 19.2113 19.692 18.6567 17.9723C18.6508 17.9544 18.6442 17.9368 18.6381 17.9189L13.1008 19.5886C13.116 19.6441 13.1323 19.6997 13.1501 19.7554C13.7048 21.4751 15.3871 22.4701 16.9078 21.9778Z" fill="#5CA8C0"></path>
+											<path class="social__invert-fill" d="M15.7657 21.7258C15.7995 22.1176 15.5104 22.4623 15.1199 22.496C14.7295 22.5297 14.3857 22.2396 14.3519 21.848C14.3178 21.4563 14.6067 21.1116 14.9972 21.0779C15.3876 21.0441 15.7318 21.3343 15.7657 21.7258Z" fill="white"></path>
+											<path class="social__invert-fill social__invert-stroke" d="M19.5497 17.6438L11.959 19.9662" stroke="white" stroke-width="0.574817" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path class="social__invert-fill" d="M27.8664 15.1955C28.4211 16.9152 27.6379 18.7086 26.1172 19.201C24.5966 19.6933 22.9144 18.698 22.3597 16.9786C22.3419 16.9229 22.3254 16.8673 22.3102 16.8118L21.3984 17.0866C21.4159 17.1484 21.4338 17.2104 21.4536 17.272C22.1909 19.5576 24.4268 20.8799 26.4476 20.2257C28.4686 19.5713 29.5095 17.1878 28.7724 14.9021C28.7686 14.8903 28.764 14.8788 28.7604 14.8672L27.8478 15.1424C27.8538 15.1602 27.8605 15.1776 27.8664 15.1955Z" fill="white"></path>
+											<path d="M26.1168 19.2007C27.6375 18.7084 28.4207 16.915 27.8659 15.1954C27.8601 15.1775 27.8534 15.1601 27.8473 15.1422L22.3098 16.8116C22.325 16.8672 22.3415 16.9228 22.3593 16.9784C22.914 18.6981 24.5961 19.6929 26.1168 19.2007Z" fill="#5CA8C0"></path>
+											<path class="social__invert-fill" d="M24.9758 18.9496C25.0097 19.3413 24.721 19.686 24.3303 19.72C23.94 19.7534 23.5959 19.4635 23.5618 19.0718C23.5279 18.68 23.8169 18.3354 24.2073 18.3016C24.5978 18.2679 24.9422 18.558 24.9758 18.9496Z" fill="white"></path>
+											<path class="social__invert-fill social__invert-stroke" d="M28.7598 14.8672L21.1355 17.1702" stroke="white" stroke-width="0.574817" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path class="social__invert-fill social__invert-stroke" d="M21.3325 23.8448C21.3325 23.8448 23.3347 24.2661 23.6144 22.3297" stroke="white" stroke-width="0.574817" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg></a><a class="social__link social__link--like" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewbox="0 0 41 41" fill="none">
+											<g opacity="0.2">
+												<path class="circle" d="M20.0436 0.73628L20.0812 0.73628L20.1184 0.730665C26.414 -0.220926 31.469 1.84428 34.9616 5.5868C38.4664 9.34246 40.4229 14.8174 40.4229 20.6998C40.4229 26.612 38.9699 31.5421 36.1456 34.9845C33.3329 38.4128 29.1137 40.4231 23.4455 40.4231C12.0658 40.4231 1.15315 31.5981 1.15315 19.9578C1.15315 14.0814 3.06403 9.28457 6.35579 5.95856C9.64728 2.63282 14.3603 0.73628 20.0436 0.73628Z" stroke="#5CA8C0"></path>
+											</g>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M29.522 14.3459C29.0777 13.9016 28.5702 13.5588 28.0285 13.3177L16.7108 24.6355L18.781 26.7057L30.2378 15.2488C30.0391 14.9278 29.8005 14.6244 29.522 14.3459ZM22.486 14.3459C23.7294 13.1025 25.4671 12.6548 27.0665 13.0028L16.0723 23.997L14.4536 22.3783L22.486 14.3459ZM15.8853 19.6696L13.8151 21.7398L13.4572 21.3819C12.0304 19.9551 11.6514 17.8772 12.3202 16.1045L15.8853 19.6696ZM16.5238 19.0312L12.7414 15.2488C12.9401 14.9278 13.1787 14.6244 13.4572 14.3459C13.8174 13.9856 14.2192 13.6922 14.6471 13.4655L18.3683 17.1867L16.5238 19.0312ZM19.0067 16.5483L15.5535 13.0951C17.2472 12.5918 19.1561 13.0087 20.4932 14.3459L20.8512 14.7038L19.0067 16.5483ZM30.659 16.1045L19.4194 27.3441L21.4896 29.4143L29.522 21.3819C30.9488 19.9551 31.3278 17.8772 30.659 16.1045Z" fill="#5CA8C0"></path>
+										</svg></a></div>
+							</div>
+							<div class="col col__lg-12 col__md-6 col__xs-12">
+								<ul class="footer-menu footer-menu--sm">
+									<li><a href="#">Карта сайта</a></li>
+									<li><a href="#">Пользовательское соглашение</a></li>
+									<li><a href="#">Условия Оферты</a></li>
+								</ul>
+							</div>
+							<div class="footer-app">
+								<div class="footer-app__title">Сделайте заказ в мобильном приложении Омолоко прямо сейчас!</div>
+								<div class="footer-app__row"> <a class="footer-app__item" href="#" target="_blank"><svg width="120" height="40" viewbox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M110.135 -0.000114141H9.53468C9.16798 -0.000114141 8.80568 -0.000114141 8.43995 0.00188586C8.1338 0.00388586 7.83009 0.00969586 7.521 0.0145859C6.84951 0.0224877 6.17961 0.0815621 5.5171 0.191296C4.85552 0.303418 4.21467 0.514802 3.61622 0.818296C3.0185 1.12436 2.47235 1.52205 1.99757 1.99696C1.5203 2.47052 1.12246 3.0179 0.81935 3.61805C0.5154 4.21699 0.304641 4.85882 0.19435 5.52137C0.0830109 6.18307 0.0230984 6.85241 0.01515 7.52337C0.00587 7.82997 0.00489 8.13759 0 8.44423V31.5585C0.00489 31.869 0.00587 32.1698 0.01515 32.4804C0.0231008 33.1513 0.0830134 33.8206 0.19435 34.4823C0.304336 35.1452 0.515108 35.7874 0.81935 36.3866C1.12233 36.9848 1.52022 37.53 1.99757 38.0009C2.47054 38.4779 3.01705 38.8759 3.61622 39.1796C4.21467 39.4839 4.85545 39.6965 5.5171 39.8104C6.17972 39.9192 6.84956 39.9783 7.521 39.9872C7.83009 39.994 8.1338 39.9979 8.43995 39.9979C8.80567 39.9999 9.168 39.9999 9.53468 39.9999H110.135C110.494 39.9999 110.859 39.9999 111.219 39.9979C111.523 39.9979 111.836 39.994 112.141 39.9872C112.811 39.9788 113.479 39.9197 114.141 39.8104C114.804 39.6957 115.448 39.4831 116.049 39.1796C116.647 38.8757 117.193 38.4777 117.666 38.0009C118.142 37.5281 118.541 36.9833 118.848 36.3866C119.15 35.787 119.358 35.1448 119.467 34.4823C119.578 33.8205 119.64 33.1514 119.652 32.4804C119.656 32.1698 119.656 31.869 119.656 31.5585C119.664 31.1952 119.664 30.8339 119.664 30.4647V9.53602C119.664 9.16981 119.664 8.80653 119.656 8.44423C119.656 8.13759 119.656 7.82997 119.652 7.52333C119.64 6.85231 119.578 6.18312 119.467 5.52133C119.358 4.85917 119.149 4.21739 118.848 3.61801C118.23 2.41508 117.252 1.43591 116.049 0.818206C115.448 0.515453 114.804 0.304126 114.141 0.191206C113.48 0.0809886 112.811 0.0218936 112.141 0.0144459C111.836 0.00956586 111.523 0.00370586 111.219 0.00175586C110.859 -0.000244141 110.494 -0.000244141 110.135 -0.000244141V-0.000114141Z" fill="#A6A6A6"></path>
+											<path d="M8.44487 39.125C8.14019 39.125 7.84287 39.1211 7.54058 39.1143C6.91436 39.1061 6.2896 39.0516 5.67144 38.9512C5.09503 38.8519 4.53664 38.6673 4.0147 38.4033C3.49754 38.1415 3.02585 37.7983 2.6177 37.3867C2.20364 36.98 1.85891 36.5082 1.59719 35.9902C1.33258 35.4688 1.14945 34.9099 1.05419 34.333C0.951311 33.7131 0.895651 33.0863 0.887687 32.458C0.881347 32.2471 0.873047 31.5449 0.873047 31.5449V8.44434C0.873047 8.44434 0.881887 7.75293 0.887737 7.5498C0.895363 6.92248 0.950699 6.29665 1.05327 5.67773C1.14871 5.09925 1.33197 4.53875 1.59673 4.01563C1.85749 3.49794 2.2003 3.02586 2.61187 2.61768C3.02297 2.20562 3.49617 1.8606 4.01421 1.59521C4.53495 1.33209 5.09228 1.14873 5.66753 1.05127C6.28772 0.949836 6.91465 0.894996 7.54304 0.88721L8.44536 0.875H111.214L112.127 0.8877C112.75 0.895099 113.371 0.94945 113.985 1.05029C114.566 1.14898 115.13 1.33362 115.656 1.59814C116.694 2.13299 117.539 2.97916 118.071 4.01807C118.332 4.53758 118.512 5.09351 118.607 5.66699C118.71 6.29099 118.768 6.92174 118.78 7.5542C118.783 7.8374 118.783 8.1416 118.783 8.44434C118.791 8.81934 118.791 9.17627 118.791 9.53613V30.4648C118.791 30.8281 118.791 31.1826 118.783 31.54C118.783 31.8652 118.783 32.1631 118.779 32.4697C118.768 33.0909 118.711 33.7104 118.608 34.3232C118.515 34.9043 118.333 35.4675 118.068 35.9932C117.805 36.5056 117.462 36.9733 117.053 37.3789C116.644 37.7927 116.172 38.1379 115.653 38.4014C115.128 38.6674 114.566 38.8527 113.985 38.9512C113.367 39.0522 112.742 39.1067 112.116 39.1143C111.823 39.1211 111.517 39.125 111.219 39.125L110.135 39.127L8.44487 39.125Z" fill="black"></path>
+											<path d="M24.769 20.3006C24.7797 19.4659 25.0014 18.6475 25.4135 17.9216C25.8255 17.1956 26.4145 16.5857 27.1256 16.1485C26.6738 15.5034 26.0779 14.9724 25.385 14.5979C24.6922 14.2233 23.9216 14.0155 23.1344 13.9908C21.4552 13.8146 19.8272 14.9957 18.9715 14.9957C18.0992 14.9957 16.7817 14.0083 15.363 14.0375C14.4453 14.0672 13.551 14.334 12.7671 14.8121C11.9832 15.2901 11.3365 15.9631 10.8901 16.7654C8.95607 20.1138 10.3987 25.0349 12.2513 27.7415C13.1782 29.0668 14.2615 30.5473 15.6789 30.4948C17.066 30.4372 17.584 29.6103 19.2583 29.6103C20.9171 29.6103 21.4031 30.4948 22.8493 30.4614C24.3377 30.4372 25.2754 29.1302 26.1698 27.7923C26.8358 26.8479 27.3483 25.8042 27.6882 24.6997C26.8235 24.334 26.0856 23.7218 25.5665 22.9395C25.0474 22.1572 24.77 21.2394 24.769 20.3006Z" fill="white"></path>
+											<path d="M22.0376 12.2108C22.8491 11.2366 23.2489 9.98445 23.1521 8.72021C21.9123 8.85044 20.767 9.44299 19.9445 10.3798C19.5424 10.8375 19.2344 11.3699 19.0381 11.9467C18.8419 12.5235 18.7612 13.1333 18.8008 13.7412C19.4209 13.7476 20.0344 13.6132 20.5951 13.3481C21.1558 13.083 21.649 12.6942 22.0376 12.2108Z" fill="white"></path>
+											<path d="M42.3022 27.1397H37.5688L36.4321 30.4961H34.4272L38.9106 18.0781H40.9936L45.477 30.4961H43.438L42.3022 27.1397ZM38.0591 25.5908H41.8111L39.9615 20.1436H39.9097L38.0591 25.5908Z" fill="white"></path>
+											<path d="M55.1597 25.9697C55.1597 28.7832 53.6538 30.5908 51.3814 30.5908C50.8057 30.6209 50.2332 30.4883 49.7294 30.2082C49.2256 29.928 48.8109 29.5117 48.5327 29.0068H48.4897V33.4912H46.6313V21.4423H48.4302V22.9482H48.4644C48.7553 22.4457 49.1771 22.0316 49.6847 21.7497C50.1923 21.4679 50.7669 21.3289 51.3472 21.3476C53.645 21.3476 55.1597 23.164 55.1597 25.9697ZM53.2495 25.9697C53.2495 24.1367 52.3023 22.9316 50.857 22.9316C49.437 22.9316 48.482 24.1621 48.482 25.9697C48.482 27.7939 49.437 29.0156 50.857 29.0156C52.3023 29.0156 53.2495 27.8193 53.2495 25.9697Z" fill="white"></path>
+											<path d="M65.1245 25.9697C65.1245 28.7832 63.6187 30.5908 61.3462 30.5908C60.7706 30.6209 60.1981 30.4883 59.6943 30.2081C59.1905 29.928 58.7758 29.5117 58.4976 29.0068H58.4546V33.4912H56.5962V21.4423H58.395V22.9482H58.4292C58.7201 22.4457 59.1419 22.0315 59.6495 21.7497C60.1571 21.4679 60.7317 21.3289 61.312 21.3476C63.6099 21.3476 65.1245 23.164 65.1245 25.9697ZM63.2144 25.9697C63.2144 24.1367 62.2671 22.9316 60.8218 22.9316C59.4019 22.9316 58.4468 24.1621 58.4468 25.9697C58.4468 27.7939 59.4019 29.0156 60.8218 29.0156C62.2671 29.0156 63.2144 27.8193 63.2144 25.9697H63.2144Z" fill="white"></path>
+											<path d="M71.7105 27.0362C71.8482 28.2676 73.0445 29.0762 74.6792 29.0762C76.2456 29.0762 77.3726 28.2676 77.3726 27.1572C77.3726 26.1934 76.6929 25.6162 75.0835 25.2207L73.4742 24.833C71.1939 24.2822 70.1353 23.2158 70.1353 21.4854C70.1353 19.3428 72.0025 17.8711 74.6538 17.8711C77.2778 17.8711 79.0767 19.3428 79.1372 21.4854H77.2612C77.1489 20.2461 76.1245 19.4981 74.6274 19.4981C73.1304 19.4981 72.106 20.2549 72.106 21.3565C72.106 22.2344 72.7603 22.751 74.3608 23.1465L75.729 23.4824C78.2769 24.0849 79.3355 25.1084 79.3355 26.9248C79.3355 29.248 77.4849 30.7031 74.5415 30.7031C71.7876 30.7031 69.9282 29.2822 69.8081 27.0361L71.7105 27.0362Z" fill="white"></path>
+											<path d="M83.3462 19.2998V21.4424H85.0679V22.9141H83.3462V27.9053C83.3462 28.6807 83.6909 29.042 84.4477 29.042C84.6521 29.0384 84.8562 29.0241 85.0591 28.999V30.4619C84.7188 30.5255 84.3729 30.5543 84.0268 30.5478C82.1938 30.5478 81.479 29.8593 81.479 28.1035V22.9141H80.1626V21.4424H81.479V19.2998H83.3462Z" fill="white"></path>
+											<path d="M86.0649 25.9697C86.0649 23.1211 87.7427 21.3311 90.3589 21.3311C92.9839 21.3311 94.6538 23.1211 94.6538 25.9697C94.6538 28.8262 92.9927 30.6084 90.3589 30.6084C87.726 30.6084 86.0649 28.8262 86.0649 25.9697ZM92.7602 25.9697C92.7602 24.0156 91.8647 22.8623 90.3589 22.8623C88.853 22.8623 87.9585 24.0244 87.9585 25.9697C87.9585 27.9316 88.853 29.0762 90.3589 29.0762C91.8647 29.0762 92.7602 27.9316 92.7602 25.9697H92.7602Z" fill="white"></path>
+											<path d="M96.186 21.4425H97.9585V22.9835H98.0015C98.1214 22.5022 98.4034 22.0769 98.8 21.779C99.1966 21.4811 99.6836 21.3288 100.179 21.3478C100.393 21.347 100.607 21.3703 100.816 21.4171V23.1554C100.546 23.0728 100.264 23.0348 99.981 23.0431C99.711 23.0321 99.4418 23.0797 99.192 23.1826C98.9421 23.2855 98.7175 23.4412 98.5335 23.6391C98.3496 23.837 98.2106 24.0724 98.1262 24.3291C98.0417 24.5857 98.0139 24.8576 98.0444 25.1261V30.4962H96.186L96.186 21.4425Z" fill="white"></path>
+											<path d="M109.384 27.8369C109.134 29.4805 107.534 30.6084 105.486 30.6084C102.852 30.6084 101.217 28.8437 101.217 26.0127C101.217 23.1729 102.861 21.3311 105.408 21.3311C107.913 21.3311 109.488 23.0518 109.488 25.7969V26.4336H103.093V26.5459C103.064 26.8791 103.105 27.2148 103.216 27.5306C103.326 27.8464 103.502 28.1352 103.732 28.3778C103.963 28.6203 104.242 28.8111 104.552 28.9374C104.861 29.0637 105.195 29.1226 105.529 29.1103C105.968 29.1515 106.409 29.0498 106.785 28.8203C107.162 28.5909 107.455 28.246 107.62 27.8369L109.384 27.8369ZM103.102 25.1348H107.628C107.645 24.8352 107.6 24.5354 107.495 24.2541C107.39 23.9729 107.229 23.7164 107.02 23.5006C106.812 23.2849 106.561 23.1145 106.283 23.0003C106.006 22.8861 105.708 22.8305 105.408 22.8369C105.105 22.8351 104.805 22.8933 104.525 23.008C104.245 23.1227 103.99 23.2918 103.776 23.5054C103.562 23.7191 103.392 23.973 103.276 24.2527C103.16 24.5323 103.101 24.8321 103.102 25.1348V25.1348Z" fill="white"></path>
+											<path d="M36.7383 11.2534H37.5361C37.6735 11.2705 37.8129 11.259 37.9455 11.2195C38.0782 11.1801 38.2013 11.1136 38.307 11.0242C38.4127 10.9349 38.4987 10.8246 38.5596 10.7003C38.6206 10.576 38.6552 10.4405 38.6611 10.3022C38.6611 9.75193 38.2471 9.39646 37.5449 9.39646C37.4042 9.3768 37.261 9.38553 37.1237 9.42214C36.9864 9.45875 36.8579 9.52249 36.7456 9.60961C36.6334 9.69672 36.5397 9.80544 36.4702 9.92935C36.4007 10.0533 36.3567 10.1898 36.3408 10.331H35.4648C35.4799 10.0747 35.5476 9.82428 35.6636 9.59527C35.7797 9.36626 35.9417 9.16359 36.1394 8.99989C36.3372 8.83618 36.5666 8.71494 36.8133 8.64372C37.0599 8.5725 37.3186 8.55282 37.5732 8.58591C38.748 8.58591 39.5752 9.24362 39.5752 10.1904C39.578 10.5076 39.4719 10.8161 39.2746 11.0645C39.0773 11.3129 38.8008 11.486 38.4912 11.5551V11.6255C38.8582 11.6417 39.2038 11.8027 39.4525 12.073C39.7012 12.3434 39.8328 12.7013 39.8184 13.0683C39.7912 13.3322 39.7116 13.588 39.5843 13.8208C39.457 14.0535 39.2845 14.2585 39.077 14.4237C38.8694 14.5889 38.631 14.7111 38.3756 14.7829C38.1202 14.8548 37.8531 14.875 37.5898 14.8423C37.326 14.8782 37.0577 14.8607 36.8008 14.7907C36.5439 14.7208 36.3037 14.5998 36.0946 14.4351C35.8854 14.2703 35.7116 14.0651 35.5834 13.8317C35.4553 13.5983 35.3754 13.3415 35.3486 13.0766H36.2383C36.292 13.6474 36.8164 14.0156 37.5898 14.0156C38.3633 14.0156 38.8682 13.6021 38.8682 13.0191C38.8682 12.4277 38.3926 12.0635 37.5615 12.0635H36.7383V11.2534Z" fill="white"></path>
+											<path d="M40.8291 13.4243C40.8291 12.6138 41.4336 12.1465 42.5039 12.0801L43.7236 12.0098V11.6211C43.7236 11.1455 43.4102 10.877 42.8018 10.877C42.3057 10.877 41.9629 11.0591 41.8633 11.3774H41.0029C41.0937 10.604 41.8223 10.1079 42.8438 10.1079C43.9727 10.1079 44.6094 10.6699 44.6094 11.6211V14.6978H43.7529V14.0649H43.6826C43.5399 14.2919 43.3395 14.477 43.1019 14.6012C42.8643 14.7254 42.5979 14.7843 42.3301 14.7719C42.141 14.7916 41.95 14.7714 41.7692 14.7127C41.5885 14.654 41.422 14.5581 41.2806 14.4311C41.1392 14.3042 41.0259 14.149 40.9482 13.9756C40.8704 13.8021 40.8298 13.6144 40.8291 13.4243ZM43.7236 13.0395V12.6631L42.624 12.7334C42.0039 12.7749 41.7226 12.9858 41.7226 13.3828C41.7226 13.7881 42.0742 14.0239 42.5576 14.0239C42.6993 14.0383 42.8423 14.024 42.9784 13.9819C43.1144 13.9398 43.2405 13.8708 43.3493 13.7789C43.4581 13.6871 43.5473 13.5743 43.6116 13.4473C43.6759 13.3202 43.714 13.1816 43.7236 13.0395Z" fill="white"></path>
+											<path d="M46.9678 10.9429V14.6978H46.0791V10.1948H49.044V10.9428L46.9678 10.9429Z" fill="white"></path>
+											<path d="M54.4297 12.4443C54.4297 13.875 53.7061 14.7719 52.5693 14.7719C52.2903 14.791 52.0116 14.7299 51.7661 14.5959C51.5206 14.4619 51.3185 14.2606 51.1836 14.0156H51.1133V16.1948H50.2246V10.1948H51.0801V10.939H51.1465C51.2838 10.6854 51.4886 10.4747 51.7381 10.3302C51.9877 10.1857 52.2723 10.113 52.5606 10.1201C53.7061 10.1201 54.4297 11.0131 54.4297 12.4443ZM53.5156 12.4443C53.5156 11.4931 53.0654 10.9184 52.3125 10.9184C51.5645 10.9184 51.0967 11.5053 51.0967 12.4482C51.0967 13.3867 51.5645 13.9741 52.3086 13.9741C53.0654 13.9741 53.5156 13.3994 53.5156 12.4443Z" fill="white"></path>
+											<path d="M55.6133 16.3106V15.5454C55.7095 15.5576 55.8064 15.5632 55.9033 15.562C56.0927 15.576 56.2805 15.5197 56.4308 15.4037C56.5811 15.2877 56.6833 15.1203 56.7178 14.9336L56.7842 14.7144L55.1543 10.1948H56.1221L57.251 13.7715H57.3213L58.4463 10.1948H59.3887L57.71 14.8838C57.3252 15.9795 56.8995 16.3311 55.9815 16.3311C55.9073 16.3311 55.6963 16.3228 55.6133 16.3106Z" fill="white"></path>
+											<path d="M60.0811 13.4198H60.9658C61.0527 13.8168 61.4248 14.0238 61.9453 14.0238C62.5371 14.0238 62.9004 13.763 62.9004 13.3578C62.9004 12.9237 62.5742 12.7167 61.9453 12.7167H61.2715V12.0262H61.9336C62.4707 12.0262 62.7441 11.8197 62.7441 11.4432C62.7441 11.1127 62.4795 10.8602 61.9336 10.8602C61.4365 10.8602 61.0732 11.0712 61.0156 11.4267H60.1592C60.2232 11.0182 60.445 10.6512 60.7768 10.4045C61.1086 10.1579 61.524 10.0514 61.9336 10.1078C63.0039 10.1078 63.6162 10.5917 63.6162 11.3524C63.6212 11.5643 63.5533 11.7714 63.4239 11.9392C63.2945 12.107 63.1114 12.2253 62.9053 12.2743V12.3446C63.1507 12.3763 63.376 12.4969 63.5384 12.6837C63.7007 12.8705 63.7889 13.1103 63.7861 13.3578C63.7861 14.2138 63.0576 14.7802 61.9453 14.7802C60.9619 14.7801 60.1631 14.3295 60.0811 13.4198Z" fill="white"></path>
+											<path d="M65.0659 14.6978V10.1948H65.9468V13.292H66.0171L68.0923 10.1948H68.9731V14.6978H68.0923V11.584H68.0259L65.9468 14.6978L65.0659 14.6978Z" fill="white"></path>
+											<path d="M73.8257 10.9428H72.4077V14.6977H71.5181V10.9428H70.1001V10.1948H73.8257V10.9428Z" fill="white"></path>
+											<path d="M78.613 13.482C78.4919 13.8935 78.23 14.2494 77.8732 14.4875C77.5164 14.7257 77.0873 14.8309 76.6608 14.7847C76.3641 14.7926 76.0693 14.7358 75.7968 14.6182C75.5243 14.5007 75.2807 14.3253 75.0827 14.1041C74.8848 13.883 74.7374 13.6214 74.6507 13.3376C74.564 13.0538 74.5402 12.7545 74.5807 12.4605C74.5412 12.1656 74.5655 11.8657 74.652 11.581C74.7385 11.2964 74.8851 11.0336 75.082 10.8105C75.2789 10.5874 75.5214 10.4093 75.7931 10.2881C76.0648 10.1669 76.3594 10.1054 76.6569 10.108C77.9098 10.108 78.6667 10.964 78.6667 12.378V12.6881H75.487V12.7379C75.4729 12.9032 75.4936 13.0696 75.5476 13.2264C75.6017 13.3832 75.688 13.527 75.8009 13.6485C75.9138 13.77 76.0509 13.8665 76.2034 13.9318C76.3559 13.9972 76.5203 14.0299 76.6862 14.0279C76.8986 14.0533 77.1138 14.0149 77.3044 13.9177C77.495 13.8205 77.6524 13.6689 77.7565 13.482L78.613 13.482ZM75.487 12.0308H77.7604C77.7716 11.8798 77.7511 11.7281 77.7002 11.5854C77.6494 11.4427 77.5692 11.3123 77.4649 11.2024C77.3606 11.0926 77.2345 11.0058 77.0947 10.9475C76.9549 10.8893 76.8044 10.861 76.653 10.8643C76.4992 10.8623 76.3466 10.891 76.2042 10.9489C76.0617 11.0068 75.9324 11.0926 75.8237 11.2014C75.715 11.3101 75.6292 11.4396 75.5713 11.582C75.5135 11.7245 75.4848 11.8771 75.487 12.0308H75.487Z" fill="white"></path>
+											<path d="M82.3804 10.1948H84.4106C85.2915 10.1948 85.8081 10.6411 85.8081 11.3398C85.8095 11.5615 85.7347 11.777 85.5962 11.9501C85.4577 12.1233 85.264 12.2436 85.0474 12.291V12.3613C85.3103 12.3779 85.5569 12.4949 85.7361 12.6881C85.9153 12.8813 86.0134 13.1359 86.0103 13.3994C86.0103 14.185 85.4194 14.6977 84.4312 14.6977H82.3804V10.1948ZM83.2612 10.877V12.043H84.1421C84.6792 12.043 84.936 11.8364 84.936 11.4556C84.936 11.1045 84.7124 10.8769 84.2407 10.8769L83.2612 10.877ZM83.2612 12.6963V14.0156H84.315C84.8404 14.0156 85.1216 13.7837 85.1216 13.3579C85.1216 12.9072 84.8033 12.6963 84.2036 12.6963L83.2612 12.6963Z" fill="white"></path>
+										</svg></a><a class="footer-app__item" href="#" target="_blank"> <svg width="135" height="40" viewbox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M130 40H5C2.25 40 0 37.75 0 35V5C0 2.25 2.25 0 5 0H130C132.75 0 135 2.25 135 5V35C135 37.75 132.75 40 130 40Z" fill="black"></path>
+											<path d="M130 0.8C132.32 0.8 134.2 2.68 134.2 5V35C134.2 37.32 132.32 39.2 130 39.2H5C2.68 39.2 0.8 37.32 0.8 35V5C0.8 2.68 2.68 0.8 5 0.8H130ZM130 0H5C2.25 0 0 2.25 0 5V35C0 37.75 2.25 40 5 40H130C132.75 40 135 37.75 135 35V5C135 2.25 132.75 0 130 0Z" fill="#A6A6A6"></path>
+											<path d="M68.14 21.75C65.79 21.75 63.87 23.54 63.87 26C63.87 28.45 65.79 30.25 68.14 30.25C70.49 30.25 72.41 28.45 72.41 26C72.41 23.54 70.49 21.75 68.14 21.75ZM68.14 28.58C66.85 28.58 65.74 27.5201 65.74 26C65.74 24.47 66.85 23.42 68.14 23.42C69.43 23.42 70.54 24.47 70.54 26C70.54 27.5201 69.42 28.58 68.14 28.58ZM58.82 21.75C56.47 21.75 54.55 23.54 54.55 26C54.55 28.45 56.47 30.25 58.82 30.25C61.17 30.25 63.09 28.45 63.09 26C63.09 23.54 61.17 21.75 58.82 21.75ZM58.82 28.58C57.53 28.58 56.42 27.5201 56.42 26C56.42 24.47 57.53 23.42 58.82 23.42C60.11 23.42 61.22 24.47 61.22 26C61.22 27.5201 60.11 28.58 58.82 28.58ZM47.74 23.06V24.8601H52.06C51.93 25.8701 51.59 26.62 51.08 27.13C50.45 27.76 49.47 28.4501 47.75 28.4501C45.09 28.4501 43.01 26.31 43.01 23.65C43.01 20.99 45.09 18.85 47.75 18.85C49.18 18.85 50.23 19.41 51 20.14L52.27 18.8701C51.19 17.8401 49.76 17.05 47.74 17.05C44.1 17.05 41.04 20.01 41.04 23.66C41.04 27.3 44.1 30.2701 47.74 30.2701C49.71 30.2701 51.19 29.63 52.35 28.42C53.54 27.23 53.91 25.5501 53.91 24.2001C53.91 23.7801 53.88 23.39 53.81 23.07H47.74V23.06ZM93.05 24.46C92.7 23.51 91.62 21.75 89.41 21.75C87.22 21.75 85.4 23.47 85.4 26C85.4 28.38 87.2 30.25 89.62 30.25C91.57 30.25 92.7 29.0601 93.16 28.3701L91.71 27.4C91.23 28.11 90.57 28.58 89.62 28.58C88.67 28.58 87.99 28.1401 87.56 27.2901L93.25 24.9401L93.05 24.46ZM87.25 25.88C87.2 24.24 88.52 23.4 89.47 23.4C90.21 23.4 90.84 23.77 91.05 24.3L87.25 25.88ZM82.63 30H84.5V17.5H82.63V30ZM79.57 22.7001H79.5C79.08 22.2001 78.28 21.75 77.26 21.75C75.13 21.75 73.18 23.62 73.18 26.0201C73.18 28.4001 75.13 30.26 77.26 30.26C78.27 30.26 79.08 29.8101 79.5 29.2901H79.56V29.9C79.56 31.53 78.69 32.4001 77.29 32.4001C76.15 32.4001 75.44 31.58 75.15 30.89L73.52 31.57C73.99 32.7 75.23 34.0801 77.29 34.0801C79.48 34.0801 81.33 32.79 81.33 29.65V22.01H79.56V22.7001H79.57ZM77.42 28.58C76.13 28.58 75.05 27.5 75.05 26.0201C75.05 24.5201 76.13 23.43 77.42 23.43C78.69 23.43 79.69 24.5301 79.69 26.0201C79.7 27.5 78.7 28.58 77.42 28.58ZM101.81 17.5H97.34V30H99.21V25.26H101.82C103.89 25.26 105.92 23.76 105.92 21.38C105.92 19 103.87 17.5 101.81 17.5ZM101.85 23.5201H99.2V19.23H101.85C103.25 19.23 104.04 20.3901 104.04 21.3701C104.04 22.3501 103.25 23.5201 101.85 23.5201ZM113.39 21.73C112.04 21.73 110.64 22.33 110.06 23.64L111.72 24.33C112.07 23.64 112.73 23.41 113.42 23.41C114.39 23.41 115.37 23.9901 115.38 25.0201V25.15C115.04 24.96 114.32 24.67 113.43 24.67C111.64 24.67 109.83 25.65 109.83 27.48C109.83 29.15 111.29 30.23 112.93 30.23C114.18 30.23 114.88 29.67 115.31 29.01H115.37V29.98H117.17V25.1901C117.18 22.97 115.52 21.73 113.39 21.73ZM113.16 28.58C112.55 28.58 111.7 28.2701 111.7 27.5201C111.7 26.5601 112.76 26.1901 113.68 26.1901C114.5 26.1901 114.89 26.3701 115.38 26.6101C115.24 27.76 114.24 28.58 113.16 28.58ZM123.74 22L121.6 27.42H121.54L119.32 22H117.31L120.64 29.58L118.74 33.7901H120.69L125.82 22H123.74ZM106.94 30H108.81V17.5H106.94V30Z" fill="white"></path>
+											<path d="M10.44 7.53997C10.15 7.84997 9.97998 8.32997 9.97998 8.93997V31.06C9.97998 31.68 10.15 32.16 10.44 32.46L10.51 32.53L22.9 20.15V20V19.85L10.51 7.46997L10.44 7.53997Z" fill="url(#paint0_linear_4886_400)"></path>
+											<path d="M27.0304 24.28L22.9004 20.15V20V19.85L27.0304 15.72L27.1204 15.77L32.0104 18.55C33.4104 19.34 33.4104 20.64 32.0104 21.44L27.1204 24.22L27.0304 24.28Z" fill="url(#paint1_linear_4886_400)"></path>
+											<path d="M27.1204 24.23L22.9004 20L10.4404 32.46C10.9004 32.95 11.6604 33.01 12.5204 32.52L27.1204 24.23Z" fill="url(#paint2_linear_4886_400)"></path>
+											<path d="M27.1202 15.78L12.5102 7.47999C11.6502 6.98999 10.8902 7.04999 10.4302 7.53999L22.9002 20L27.1202 15.78Z" fill="url(#paint3_linear_4886_400)"></path>
+											<path opacity="0.2" d="M27.0299 24.1299L12.5099 32.3799C11.6999 32.8399 10.9699 32.8099 10.5099 32.3899L10.4399 32.4599L10.5099 32.5299C10.9799 32.9499 11.6999 32.9799 12.5099 32.5199L27.1199 24.2199L27.0299 24.1299Z" fill="black"></path>
+											<path opacity="0.12" d="M10.44 32.3199C10.15 32.0099 9.97998 31.5299 9.97998 30.9199V31.0699C9.97998 31.6899 10.15 32.1699 10.44 32.4699L10.51 32.3999L10.44 32.3199Z" fill="black"></path>
+											<path opacity="0.12" d="M32.01 21.3L27.02 24.13L27.11 24.22L32 21.44C32.7 21.04 33.05 20.52 33.05 20C33 20.47 32.65 20.94 32.01 21.3Z" fill="black"></path>
+											<path opacity="0.25" d="M12.5102 7.61994L32.0102 18.6999C32.6402 19.0599 33.0002 19.5199 33.0602 19.9999C33.0602 19.4799 32.7102 18.9499 32.0102 18.5599L12.5102 7.47994C11.1102 6.68994 9.97021 7.34994 9.97021 8.94994V9.09994C9.97021 7.48994 11.1202 6.82994 12.5102 7.61994Z" fill="white"></path>
+											<path d="M42.1101 14.27H41.3701V12.26H41.9601C42.4801 11.81 42.7301 11.05 42.7201 9.96V7H46.7301V12.26H47.4001V14.27H46.6601V13H42.1101V14.27ZM43.5001 9.97C43.5101 10.92 43.3201 11.68 42.9301 12.27H45.9601V7.74H43.5001V9.97Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M53.4099 12.2201C52.8199 12.8301 52.0899 13.1301 51.2099 13.1301C50.3299 13.1301 49.5999 12.8301 49.0099 12.2201C48.4199 11.6101 48.1299 10.8701 48.1299 10.0001C48.1299 9.13012 48.4199 8.38012 49.0099 7.78012C49.5999 7.17012 50.3299 6.87012 51.2099 6.87012C52.0799 6.87012 52.8099 7.17012 53.4099 7.78012C53.9999 8.39012 54.2999 9.13012 54.2999 10.0001C54.2999 10.8801 53.9999 11.6201 53.4099 12.2201ZM49.5799 11.7201C50.0199 12.1701 50.5699 12.3901 51.2099 12.3901C51.8499 12.3901 52.3999 12.1701 52.8399 11.7201C53.2799 11.2701 53.5099 10.7001 53.5099 10.0001C53.5099 9.30012 53.2899 8.73012 52.8399 8.28012C52.3999 7.83012 51.8599 7.60012 51.2099 7.60012C50.5699 7.60012 50.0199 7.82012 49.5799 8.27012C49.1399 8.73012 48.9199 9.30012 48.9199 10.0001C48.9199 10.7001 49.1399 11.2701 49.5799 11.7201Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M58.1801 13.1301C57.3001 13.1301 56.5601 12.8301 55.9601 12.2301C55.3601 11.6301 55.0601 10.8901 55.0601 9.9901C55.0601 9.1001 55.3601 8.3501 55.9601 7.7501C56.5601 7.1501 57.3001 6.8501 58.1801 6.8501C59.0801 6.8501 59.8201 7.1801 60.3801 7.8301L59.8401 8.3501C59.4301 7.8401 58.8801 7.5901 58.1701 7.5901C57.5201 7.5901 56.9601 7.8101 56.5101 8.2501C56.0601 8.6901 55.8401 9.2701 55.8401 9.9801C55.8401 10.6901 56.0601 11.2701 56.5101 11.7101C56.9601 12.1501 57.5101 12.3701 58.1701 12.3701C58.8901 12.3701 59.5001 12.0801 60.0101 11.5001L60.5501 12.0401C60.2801 12.3701 59.9301 12.6301 59.5201 12.8201C59.1101 13.0401 58.6601 13.1301 58.1801 13.1301Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M63.68 13H62.91V7.74H61.23V7H65.35V7.74H63.67V13H63.68Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M70.6501 7L68.3801 12.06C68.0701 12.77 67.6001 13.13 66.9801 13.13C66.8001 13.13 66.6001 13.09 66.3801 13L66.5801 12.29C66.7101 12.36 66.8401 12.4 66.9801 12.4C67.1601 12.4 67.3001 12.37 67.4001 12.3C67.5001 12.23 67.5901 12.1 67.6701 11.92L67.8901 11.44L65.8701 7H66.7801L68.2601 10.44H68.2901L69.7401 7H70.6501Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M71.52 13V7H75.86V13H75.09V7.74H72.29V13H71.52Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M77.23 13V7H78V9.57H81V7H81.77V13H81V10.29H78V13H77.23Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M88.0603 12.2201C87.4703 12.8301 86.7403 13.1301 85.8603 13.1301C84.9803 13.1301 84.2503 12.8301 83.6603 12.2201C83.0703 11.6101 82.7803 10.8701 82.7803 10.0001C82.7803 9.13012 83.0703 8.38012 83.6603 7.78012C84.2503 7.17012 84.9803 6.87012 85.8603 6.87012C86.7303 6.87012 87.4603 7.17012 88.0603 7.78012C88.6503 8.39012 88.9503 9.13012 88.9503 10.0001C88.9403 10.8801 88.6503 11.6201 88.0603 12.2201ZM84.2303 11.7201C84.6703 12.1701 85.2203 12.3901 85.8603 12.3901C86.5003 12.3901 87.0503 12.1701 87.4903 11.7201C87.9303 11.2701 88.1603 10.7001 88.1603 10.0001C88.1603 9.30012 87.9403 8.73012 87.4903 8.28012C87.0403 7.83012 86.5003 7.60012 85.8603 7.60012C85.2203 7.60012 84.6703 7.82012 84.2303 8.27012C83.7803 8.73012 83.5603 9.30012 83.5603 10.0001C83.5603 10.7001 83.7803 11.2701 84.2303 11.7201Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<path d="M92.0903 13V7H94.2603C94.7303 7 95.1403 7.16 95.4803 7.46C95.8303 7.78 96.0003 8.17 96.0003 8.63C96.0003 8.92 95.9303 9.17 95.7803 9.38C95.6303 9.6 95.4403 9.76 95.1903 9.87V9.9C95.4903 10 95.7303 10.17 95.9203 10.42C96.1103 10.67 96.2103 10.95 96.2103 11.27C96.2103 11.76 96.0303 12.17 95.6703 12.49C95.3003 12.84 94.8703 13 94.3803 13H92.0903ZM92.8603 9.57H94.2603C94.5503 9.57 94.7803 9.47 94.9603 9.28C95.1403 9.09 95.2203 8.88 95.2203 8.65C95.2203 8.42 95.1403 8.21 94.9603 8.02C94.7903 7.83 94.5703 7.73 94.2903 7.73H92.8603V9.57ZM92.8603 12.26H94.4103C94.7103 12.26 94.9503 12.16 95.1303 11.95C95.3103 11.74 95.4103 11.52 95.4103 11.27C95.4103 11.02 95.3203 10.8 95.1203 10.6C94.9303 10.4 94.6803 10.29 94.3703 10.29H92.8503V12.26H92.8603Z" fill="white" stroke="white" stroke-width="0.2" stroke-miterlimit="10"></path>
+											<defs>
+												<lineargradient id="paint0_linear_4886_400" x1="21.7996" y1="8.70977" x2="5.01718" y2="25.4922" gradientunits="userSpaceOnUse">
+													<stop stop-color="#00A0FF"></stop>
+													<stop offset="0.00657445" stop-color="#00A1FF"></stop>
+													<stop offset="0.2601" stop-color="#00BEFF"></stop>
+													<stop offset="0.5122" stop-color="#00D2FF"></stop>
+													<stop offset="0.7604" stop-color="#00DFFF"></stop>
+													<stop offset="1" stop-color="#00E3FF"></stop>
+												</lineargradient>
+												<lineargradient id="paint1_linear_4886_400" x1="33.8347" y1="20.0015" x2="9.63779" y2="20.0015" gradientunits="userSpaceOnUse">
+													<stop stop-color="#FFE000"></stop>
+													<stop offset="0.4087" stop-color="#FFBD00"></stop>
+													<stop offset="0.7754" stop-color="#FFA500"></stop>
+													<stop offset="1" stop-color="#FF9C00"></stop>
+												</lineargradient>
+												<lineargradient id="paint2_linear_4886_400" x1="24.8273" y1="22.2962" x2="2.06903" y2="45.0545" gradientunits="userSpaceOnUse">
+													<stop stop-color="#FF3A44"></stop>
+													<stop offset="1" stop-color="#C31162"></stop>
+												</lineargradient>
+												<lineargradient id="paint3_linear_4886_400" x1="7.29738" y1="0.176287" x2="17.46" y2="10.3388" gradientunits="userSpaceOnUse">
+													<stop stop-color="#32A071"></stop>
+													<stop offset="0.0685" stop-color="#2DA771"></stop>
+													<stop offset="0.4762" stop-color="#15CF74"></stop>
+													<stop offset="0.8009" stop-color="#06E775"></stop>
+													<stop offset="1" stop-color="#00F076"></stop>
+												</lineargradient>
+											</defs>
+										</svg></a></div>
+							</div>
+							<div class="col col__lg-12 col__md-6 col__xs-12">
+								<ul class="copyright">
+									<li>© 2020 Чистая Линия</li>
+									<li>Сделано в <a href="#">CloudMill</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col col__xl-5 col__lg-7 col__xs-12">
+						<div class="row">
+							<div class="col col__lg-6 col__md-3 col__xs-7 first-m">
+								<div class="h--4"><a href="#">Мир Чистой Линии</a></div>
+								<ul class="footer-menu">
+									<li><a href="#">Миссия и ценности</a></li>
+									<li><a href="#">История</a></li>
+									<li><a href="#">Экскурсии на фабрику</a></li>
+									<li><a href="#">Смотровая площадка</a></li>
+									<li><a href="#">Интернет-магазин</a></li>
+									<li><a href="#">О!Эскимо</a></li>
+								</ul>
+								<ul class="list--inline visible__md">
+									<li>
+										<div class="h--4"><a href="#">Рецепты</a></div>
+									</li>
+									<li>
+										<div class="h--4"><a href="#">Контакты</a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="col col__lg-6 col__md-3 col__xs-7">
+								<div class="h--4"><a href="#">Производство</a></div>
+								<ul class="footer-menu">
+									<li><a href="#">Лаборатория</a></li>
+									<li><a href="#">Безопасность и качество</a></li>
+									<li><a href="#">Производство мороженого</a></li>
+									<li><a href="#">Производство шоколада</a></li>
+									<li><a href="#">Производство молочной продукции</a></li>
+								</ul>
+							</div>
+							<div class="col col__lg-6 col__md-3 col__xs-5 first-m">
+								<div class="h--4"><a href="#">Покупателю</a></div>
+								<ul class="footer-menu">
+									<li><a href="#">Вопрос–ответ</a></li>
+									<li><a href="#">Отзывы</a></li>
+									<li><a href="#">Интересное</a></li>
+								</ul>
+								<div class="h--4"><a href="#">Вкусовые сосочки</a></div>
+							</div>
+							<div class="col col__lg-6 col__md-3 col__xs-5">
+								<div class="h--4"><a href="#">Пресс–центр</a></div>
+								<ul class="footer-menu">
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Пресс–релизы</a></li>
+								</ul>
+								<div class="h--4 visible__lg visible__xl"><a href="#">Рецепты</a></div>
+								<div class="h--4 visible__lg visible__xl"><a href="#">Контакты</a></div>
+							</div>
+							<div class="col col__xs-12 visible__sm visible__xs">
+								<ul class="list--inline">
+									<li>
+										<div class="h--4"><a href="#">Рецепты</a></div>
+									</li>
+									<li>
+										<div class="h--4"><a href="#">Контакты</a></div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=6e05a1e4-9f12-4e86-a1b0-93857b7da078&amp;lang=ru_RU" type="text/javascript"></script>
+		<script type="text/javascript" src="assets/vendor.js"></script>
+		<script type="text/javascript" src="assets/app.js"></script>
+	</body>
+
+</html>
